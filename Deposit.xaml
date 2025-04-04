@@ -1,0 +1,42 @@
+﻿<Window x:Class="ATM_System.Deposit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM_System"
+        mc:Ignorable="d"
+        Title="ATM Management System" Height="714" Width="682">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1E6F75"/>
+                <GradientStop Color="#FF2B7C83" Offset="1"/>
+                <GradientStop Color="#FF233334" Offset="0.418"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Blue Rock Bank" HorizontalAlignment="Left" Margin="291,30,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Algerian" FontWeight="Bold"/>
+        <Label x:Name="Depositlabel" Content="Deposit Amount" HorizontalAlignment="Left" Margin="260,397,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Width="187" RenderTransformOrigin="0.727,-0.977"/>
+        <TextBox x:Name="AmountTextBox" HorizontalAlignment="Center" Margin="0,453,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="406" Height="37"/>
+        <Button Content="Deposit" HorizontalAlignment="Left" Margin="195,559,0,0" VerticalAlignment="Top" FontSize="24" Width="119" Click="DepositButton_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1C8A7A"/>
+                    <GradientStop Color="#FF2A7066" Offset="1"/>
+                    <GradientStop Color="#FF2C534D" Offset="0.476"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="365,559,0,0" VerticalAlignment="Top" FontSize="24" Width="103" Click="BackButton_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2D7960"/>
+                    <GradientStop Color="#FF297E62" Offset="1"/>
+                    <GradientStop Color="#FF2E4E43" Offset="0.431"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="100" Margin="45,21,0,0" VerticalAlignment="Top" Width="100" Source="/WhatsApp Image 2025-03-29 at 13.56.19_acb2df10.jpg"/>
+        <Image HorizontalAlignment="Left" Height="176" Margin="267,150,0,0" VerticalAlignment="Top" Width="349" Source="/download (8).png"/>
+
+    </Grid>
+</Window>
